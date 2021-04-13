@@ -60,7 +60,9 @@ int main(int argc, char* argv[]) {
         {
             if (lines[i] != "")
                 if (lines[i].length() != 78) {
-                    printf("Error length Data [%d]\n", i);
+                    tb_file.close();
+                    tb_outFile.close();
+                    printf("Error length Data [%d]\n", (int)i);
                     system("pause");
                     return 0;
                 }
